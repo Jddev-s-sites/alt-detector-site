@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Verdana');
+body {
+    background-color: #060e19;
+    font-family: Verdana;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 10px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: 200px auto;
+    background-color: #080d14;
+    box-shadow: 2px 10px 64px 0 rgba(3, 12, 96, 0.127);
+    z-index: 1;
+    transition: 0.5s;
+    animation: FadeAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.name {
+    color: rgb(0, 132, 255);
+    margin-bottom: -10px;
+}
+
+.buttons {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #6F7887;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border-color: transparent;
+    border-style: solid;
+    padding: 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    color: white;
+    background-color: #0f1824;
+}
+
+.pfp {
+    border-radius: 100%;
+}
+
+
+footer a {
+    color: #655CD6;
+    font-size: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #6e65ed;
+}
+
+#particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    pointer-events: all;
+    z-index: 0;
+    line-height: normal;
+}
+
+
+@keyframes FadeAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .verified {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #606adb;
+    border-radius: 10px;
+  }
+
+  .verified i {
+    font-size: 40px;
+    vertical-align: -7px;
+    margin-right: -5px !important;
+  }
+
+  @media (max-width: 816px) {
+    .container {
+        width: 300px;
+    }
+    .name {
+        font-size: 27px;
+    }
+
+    .verified {
+        font-size: 20px;
+    }
+    .buttons {
+        margin-top: -10px;
+        position: relative;
+        display: grid;
+    }
+    .button {
+        margin: 7px;
+    }
+  }
