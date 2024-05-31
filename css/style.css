@@ -17,7 +17,7 @@ body {
     align-items: center;
     margin: 200px auto;
     background-color: #080d14;
-    box-shadow: 2px 10px 64px 0 rgba(3, 12, 96, 0.127);
+    box-shadow: 0 0 15px rgba(3, 12, 96, 0.127); 
     z-index: 1;
     transition: 0.5s;
     animation: FadeAnimation ease 3s;
